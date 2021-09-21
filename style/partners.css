@@ -1,0 +1,7 @@
+.partners{
+    border-top: 1px solid #c7c7c7;
+    padding-top: 30px;
+    margin: 0 89px 30px 111px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,74 @@
+footer {
+    background-color: #ececec;
+    padding: 0px 89px 0px 111px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    outline: 1px solid #aaaaaa;
+}
+
+footer>ul {
+    padding: 0;
+}
+
+footer>ul>li {
+    font-size: 15px;
+    line-height: 2;
+    text-align: left;
+    color: #666;
+}
+
+footer>.about {
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: max-content;
+    border-right: 1px solid #f9f9f9;
+    padding-right: 35px;
+}
+footer>.offers{
+    flex: 1 1 128px;
+    padding-left: 34px;
+    padding-right: 86px;
+    border-left: 1px solid #9f9f9f;
+}
+
+footer>.map{
+    padding-right: 20px;
+    border-right: 1px solid #f9f9f9;
+
+}
+footer>.contacts {
+    padding-left: 34px;
+    border-left: 1px solid #9f9f9f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0  432px; 
+}
+footer>.contacts>div>p{
+    margin: 0;
+    margin-bottom: 14px;
+}
+footer>.contacts .telephone {
+    font-size: 29.5px;
+}
+footer>.contacts .text {
+    font-size: 15px;
+    color: #666;
+}
+footer>.contacts .text>mark {
+    color: #7db0b2;
+    background: none;
+}
+footer>.contacts>.search {
+    width: 100%;
+}
+footer>.contacts>.search>input {
+    width: 100%;
+    height: 26px;
+}
+footer>.contacts>.search>.search__icon {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+}

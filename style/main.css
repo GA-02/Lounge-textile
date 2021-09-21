@@ -1,0 +1,119 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 89px 0px 111px;
+}
+
+main div {
+    /* border: 1px solid black; */
+}
+
+main>.main__content {
+    flex: 0 1 885px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>.main__content>.main__header {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>.main__content>.main__header>.benefits {
+    flex: 0 0 210px;
+}
+
+main>.main__content>.main__header>.benefits>.benefits__item {
+    width: 210px;
+    height: 104px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #eee;
+    font-size: 15px;
+    text-align: left;
+    color: #666;
+}
+
+main>.main__content>.main__header>.benefits>.benefits__item:last-child {
+    margin-bottom: 0;
+}
+
+main>.main__content>.main__header>.benefits>.benefits__item>.icon {
+    margin-left: 22px;
+    margin-right: 14px;
+}
+
+main>.main__content>.about {
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid #eee;
+}
+
+main>.main__content>.about>.title {
+    flex: 0 0 148px;
+    font-size: 18px;
+    color: #666;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+main>.main__content>.about>.text>p {
+    margin: 0;
+    padding: 13px 30px 3px 14px;
+    font-size: 15px;
+    color: #666;
+}
+
+main>.main__content>.about>.text>a {
+    font-size: 15px;
+    float: right;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    text-align: right;
+    color: #69a4a6;
+}
+
+main>.main__content>.catalog {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main>.main__content>.catalog>.catalog__item {
+    width: 210px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>.main__content>.catalog>.catalog__item>.icon {
+    object-position: right top;
+    object-fit: none;
+    width: 100%;
+    height: 200px;
+}
+
+main>.main__content>.catalog>.catalog__item>.name {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    background-color: #eee;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>.main__content>.catalog>.catalog__item>.name>p{
+    margin: 0;
+    text-align: center;
+    color: #666;
+
+}
