@@ -24,13 +24,14 @@ footer>.about {
     flex-grow: 1;
     min-width: max-content;
     border-right: 1px solid #f9f9f9;
-    padding-right: 35px;
+    padding-right: 30px;
 }
 
 footer>.offers {
     flex: 1 1 128px;
-    padding-left: 34px;
-    padding-right: 86px;
+    min-width: max-content;
+    padding-left: 30px;
+    padding-right: 82px;
     border-left: 1px solid #9f9f9f;
 }
 
@@ -40,7 +41,7 @@ footer>.map {
 }
 
 footer>.contacts {
-    padding-left: 34px;
+    padding-left: 30px;
     border-left: 1px solid #9f9f9f;
     display: flex;
     flex-wrap: wrap;
@@ -92,4 +93,25 @@ footer>.info {
 footer>.info a {
     color: #7db0b1;
     text-decoration: none;
+}
+@media screen and (max-width:1390px) {
+    footer>.about {
+        flex-shrink: 1;
+        padding-right: 1%;
+    }
+    
+    footer>.offers {
+        flex: 1 1 128px;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    footer>.map {
+        padding-right: 1%;
+    }
+    
+    footer>.contacts {
+        padding-left: 1%;
+        flex: 1 0 432px;
+    }
 }

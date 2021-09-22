@@ -9,6 +9,12 @@ main>.main__content>.main__header>.slider div {
     /* border: 1px solid black; */
 }
 
+main>.main__content>.main__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 main>.main__content>.main__header>.slider {
     display: flex;
     height: 340px;
@@ -16,6 +22,8 @@ main>.main__content>.main__header>.slider {
     background: url('../image/main/slider/распродажа.png') no-repeat;
     background-size: 100% 100%;
     display: flex;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 #slider__next {
@@ -41,14 +49,28 @@ main>.main__content>.main__header>.slider>.slider__control {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 0 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-weight: 800;
     font-size: 35px;
     background-color: #808080;
     align-self: center;
-    justify-content: center;
+    opacity: 0.5;
+    color: rgba(255, 255, 255);
+
+}
+
+main>.main__content>.main__header>.slider>.slider__control p {
+    margin-top: -5px;
+}
+
+main>.main__content>.main__header>.slider>.slider__control.slider__prev p {
+    margin-left: -5px;
+}
+
+main>.main__content>.main__header>.slider>.slider__control.slider__next p {
+    margin-right: -5px;
 }
 
 main>.main__content>.main__header>.slider>.slider__choose {
@@ -66,20 +88,30 @@ main>.main__content {
     width: max-content;
     display: flex;
     flex-wrap: wrap;
+    height: max-content;
 }
 
 main>.main__content>.main__header {
     flex: 0 0 100%;
+    height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 main>.main__content>.main__header>.benefits {
-    flex: 0 0 210px;
+    flex: 1 0 210px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-right: -15px;
+    height: max-content;
 }
 
 main>.main__content>.main__header>.benefits>.benefits__item {
-    width: 210px;
+    min-width: 210px;
+    flex: 1 0 210px;
+    margin-right: 15px;
     height: 104px;
     margin-bottom: 15px;
     display: flex;
@@ -91,8 +123,13 @@ main>.main__content>.main__header>.benefits>.benefits__item {
     color: #666;
 }
 
+@media screen and (min-width:1400px) {
+    main>.main__content>.main__header>.benefits>.benefits__item {
+        min-width: 100%;
+    }
+}
 main>.main__content>.main__header>.benefits>.benefits__item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 main>.main__content>.main__header>.benefits>.benefits__item>.icon {
@@ -101,7 +138,7 @@ main>.main__content>.main__header>.benefits>.benefits__item>.icon {
 }
 
 main>.main__content>.about {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     border: 1px solid #eee;
     height: max-content;
@@ -139,6 +176,7 @@ main>.main__content>.catalog {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
     justify-content: left;
     margin-right: -15px;
 }

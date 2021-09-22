@@ -50,26 +50,15 @@ header>.main-info>.contacts .telephone {
 header>.main-info>.contacts {
     display: flex;
     justify-content: space-between;
-    flex: 0 1 35%;
-    margin-right: 12%;
+    flex: 0 1 40%;
+    margin-right: 1%;
 }
 
 header>.main-info>.site-logo {
-    margin-right: 5%;
+    margin-right: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (max-width:1000px) {
-    header>.main-info>.site-logo {
-        margin-right: 0%;
-        width: 100%;
-    }
-    header>.main-info>.contacts {
-        margin-right: 0%;
-        width: 100%;
-    }
 }
 
 header>.main-info>.basket {
@@ -78,4 +67,24 @@ header>.main-info>.basket {
     align-items: center;
 }
 
-
+@media screen and (max-width: 1260px) {
+    header>.log-in {
+        display: none;
+    }
+    header>.main-info {
+        margin-top: 20px;
+    }
+    header>.main-info>.site-logo {
+        margin-right: 0%;
+        width: 100%;
+    }
+    header>.main-info>.contacts {
+        flex: 1 1 100%;
+        margin-right: 0%;
+        justify-content: space-evenly;
+    }
+    header>.main-info>.basket {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+}

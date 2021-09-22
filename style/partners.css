@@ -1,7 +1,17 @@
-.partners{
+.partners {
     border-top: 1px solid #c7c7c7;
     padding-top: 30px;
     margin: 0 89px 30px 111px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1260px) {
+    .partners>img {
+        display: none;
+    }
+    .partners>img:first-child {
+        display: block;
+        margin: 0 auto  ;
+    }
 }
