@@ -5,12 +5,65 @@ main {
     padding: 0px 89px 0px 111px;
 }
 
-main div {
+main>.main__content>.main__header>.slider div {
     /* border: 1px solid black; */
 }
 
+main>.main__content>.main__header>.slider {
+    display: flex;
+    height: 340px;
+    width: 660px;
+    background: url('../image/main/slider/распродажа.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#slider__next {
+    display: flex;
+    position: absolute;
+    height: 340px;
+    width: 660px;
+    align-items: center;
+}
+
+#slider__next-image {
+    position: relative;
+    object-position: left top;
+    object-fit: none;
+    width: 0px;
+    max-width: 660px;
+    height: 340px;
+}
+
+main>.main__content>.main__header>.slider>.slider__control {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 35px;
+    background-color: #808080;
+    align-self: center;
+    justify-content: center;
+}
+
+main>.main__content>.main__header>.slider>.slider__choose {
+    flex: 1 1 1px;
+    position: relative;
+    z-index: 1;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 main>.main__content {
-    flex: 0 1 885px;
+    flex: 1 1 885px;
+    width: max-content;
     display: flex;
     flex-wrap: wrap;
 }
@@ -51,6 +104,7 @@ main>.main__content>.about {
     margin-top: 30px;
     display: flex;
     border: 1px solid #eee;
+    height: max-content;
 }
 
 main>.main__content>.about>.title {
@@ -62,6 +116,7 @@ main>.main__content>.about>.title {
     justify-content: center;
     align-items: center;
     border: 1px solid white;
+    outline: 1px solid #eeeeee;
 }
 
 main>.main__content>.about>.text>p {
@@ -84,12 +139,15 @@ main>.main__content>.catalog {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
+    margin-right: -15px;
 }
 
 main>.main__content>.catalog>.catalog__item {
     width: 210px;
+    height: max-content;
     margin-bottom: 15px;
+    margin-right: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -105,15 +163,16 @@ main>.main__content>.catalog>.catalog__item>.name {
     width: 100%;
     height: 50px;
     margin: 0;
+    padding: 0;
     background-color: #eee;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main>.main__content>.catalog>.catalog__item>.name>p{
+
+main>.main__content>.catalog>.catalog__item>.name>p {
     margin: 0;
     text-align: center;
     color: #666;
-
 }

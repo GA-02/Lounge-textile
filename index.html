@@ -101,7 +101,21 @@
         </aside>
         <div class="main__content">
             <div class="main__header">
-                <div class="slider"></div>
+
+
+                <div class="slider">
+                    <div id="slider__next"><img src="./image/main/slider/8 марта.png" id="slider__next-image"></div>
+                    <div class="slider__prev slider__control">❮</div>
+                    <div class="slider__choose">
+                        <input checked type="radio" class="slider__choose__item" name="slider__choose__item">
+                        <input type="radio" class="slider__choose__item" name="slider__choose__item">
+                        <input type="radio" class="slider__choose__item" name="slider__choose__item">
+                        <input type="radio" class="slider__choose__item" name="slider__choose__item">
+                    </div>
+                    <div class="slider__next slider__control">❯</div>
+                </div>
+
+
                 <div class="benefits">
                     <div class="benefits__item">
                         <img src="image/main/benefits/sloy_24_889.png" class="icon">
@@ -238,8 +252,13 @@
                     <p class="price">14 000 руб.</p>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item new">
                 <img src="image/additional-products/5.png" class="icon">
+                <div class="functional__button">
+                    <div class="functional__button__item"><img src="/image/additional-products/add.png" class="functional__button__item"></div>
+                    <div class="functional__button__item"><img src="/image/additional-products/basket.png" class="functional__button__item"></div>
+                    <div class="functional__button__item"><img src="/image/additional-products/search.png" class="functional__button__item"></div>
+                </div>
                 <div class="text">
                     <p class="name">Ортопедический матрас<br>«Комфорт»</p>
                     <p class="price">30 000 руб.</p>
@@ -279,9 +298,13 @@
             </div>
             <div class="search"><input type="search" placeholder="Например, ортопедические подушки"><img src="/image/nav/search_go_815.png" class="search__icon"></div>
         </div>
+        <div class="info">
+            <p><a href="#">Карта сайта</a><br>Интернет–магазин постельного белья Example.com<br>© 2008—2017</p>
+        </div>
     </footer>
     <br><br><br><br><br>
 
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

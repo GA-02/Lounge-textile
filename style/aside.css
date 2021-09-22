@@ -1,7 +1,8 @@
 aside {
-    width: 283px;
+    min-width: 283px;
     background: #eeeeee;
     height: max-content;
+    margin-right: 30px;
 }
 
 aside>.title {

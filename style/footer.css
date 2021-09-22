@@ -2,6 +2,7 @@ footer {
     background-color: #ececec;
     padding: 0px 89px 0px 111px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-top: 1px solid white;
     outline: 1px solid #aaaaaa;
@@ -25,50 +26,70 @@ footer>.about {
     border-right: 1px solid #f9f9f9;
     padding-right: 35px;
 }
-footer>.offers{
+
+footer>.offers {
     flex: 1 1 128px;
     padding-left: 34px;
     padding-right: 86px;
     border-left: 1px solid #9f9f9f;
 }
 
-footer>.map{
+footer>.map {
     padding-right: 20px;
     border-right: 1px solid #f9f9f9;
-
 }
+
 footer>.contacts {
     padding-left: 34px;
     border-left: 1px solid #9f9f9f;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1 0  432px; 
+    flex: 1 0 432px;
 }
-footer>.contacts>div>p{
+
+footer>.contacts>div>p {
     margin: 0;
     margin-bottom: 14px;
 }
+
 footer>.contacts .telephone {
     font-size: 29.5px;
 }
+
 footer>.contacts .text {
     font-size: 15px;
     color: #666;
 }
+
 footer>.contacts .text>mark {
     color: #7db0b2;
     background: none;
 }
+
 footer>.contacts>.search {
     width: 100%;
 }
+
 footer>.contacts>.search>input {
     width: 100%;
     height: 26px;
 }
+
 footer>.contacts>.search>.search__icon {
     position: absolute;
     margin-left: -20px;
     margin-top: 5px;
+}
+
+footer>.info {
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+}
+
+footer>.info a {
+    color: #7db0b1;
+    text-decoration: none;
 }
