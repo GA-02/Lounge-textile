@@ -45,17 +45,24 @@
             </div>
     </header>
     <nav>
-        <ul class="menu" type="none">
-            <li class="menu__item"><u> О КОМПАНИИ</u></li>
-            <li class="menu__item">УСЛУГИ</li>
-            <li class="menu__item">ОПЛАТА И ДОСТАВКА</li>
-            <li class="menu__item">КОНТАКТЫ</li>
-        </ul>
-        <div class="search"><input type="search" placeholder="Например, ортопедические подушки"><img src="/image/nav/search_go_815.png" class="search__icon"></div>
+        <div class="menu__button">МЕНЮ
+            <div class="menu__burger"><span></span></div>
+        </div>
+        <div class="menu__drop-menu">
+            <ul class="menu" type="none">
+                <li class="menu__item">О КОМПАНИИ</li>
+                <li class="menu__item">УСЛУГИ</li>
+                <li class="menu__item">ОПЛАТА И ДОСТАВКА</li>
+                <li class="menu__item">КОНТАКТЫ</li>
+            </ul>
+            <div class="search"><input type="search" placeholder="Например, ортопедические подушки"><img src="/image/nav/search_go_815.png" class="search__icon"></div>
+        </div>
     </nav>
     <main>
         <aside>
-            <div class="title">КАТАЛОГ</div>
+            <div class="title">КАТАЛОГ
+                <div class="category__burger"><span></span></div>
+            </div>
             <ul class="category" type="none">
                 <li class="category__item">РАСПРОДАЖА</li>
                 <li class="category__item have-subcategory "><span class="title-subcategory">ПОСТЕЛЬНОЕ БЕЛЬЕ</span>
@@ -105,14 +112,18 @@
 
                 <div class="slider">
                     <div id="slider__next"><img src="./image/main/slider/8 марта.png" id="slider__next-image"></div>
-                    <div class="slider__prev slider__control"><p>❮</p></div>
+                    <div class="slider__prev slider__control">
+                        <p>❮</p>
+                    </div>
                     <div class="slider__choose">
                         <input checked type="radio" class="slider__choose__item" name="slider__choose__item">
                         <input type="radio" class="slider__choose__item" name="slider__choose__item">
                         <input type="radio" class="slider__choose__item" name="slider__choose__item">
                         <input type="radio" class="slider__choose__item" name="slider__choose__item">
                     </div>
-                    <div class="slider__next slider__control"><p>❯</p></div>
+                    <div class="slider__next slider__control">
+                        <p>❯</p>
+                    </div>
                 </div>
 
 
@@ -221,7 +232,6 @@
             <li class="category__item selected">НОВИНКИ</li>
             <li class="category__item">ПОПУЛЯРНОЕ</li>
             <li class="category__item">СКИДКИ</li>
-            <li class="category__item">НОВИНКИ</li>
         </ul>
         <div class="catalog">
             <div class="catalog__item">
@@ -302,9 +312,9 @@
             <p><a href="#">Карта сайта</a><br>Интернет–магазин постельного белья Example.com<br>© 2008—2017</p>
         </div>
     </footer>
-    <br><br><br><br><br>
 
     <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -14,11 +14,62 @@ aside>.title {
     height: 56px;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding: 0px 20px;
+    justify-content: space-between;
 }
 
 aside>ul {
     padding-left: 0px;
+}
+
+aside>.title>.category__burger {
+    width: 15px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+aside>.title>.category__burger>span::before,
+aside>.title>.category__burger>span::after,
+aside>.title>.category__burger>span {
+    display: none;
+    position: absolute;
+    width: 15px;
+    margin-left: -15px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    transition: all 0.3s linear;
+}
+
+aside>.title>.category__burger>span::before {
+    content: '';
+    display: block;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+aside>.title>.category__burger.active>span::before {
+    transform: rotate(45deg);
+    transition: all 0.3s linear;
+    margin-top: 0;
+}
+
+aside>.title>.category__burger.active>span {
+    width: 0;
+}
+
+aside>.title>.category__burger.active>span::after {
+    transform: rotate(-45deg);
+    transition: all 0.3s linear;
+    margin-top: 0;
+}
+
+aside>.title>.category__burger>span::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
 }
 
 aside>.category>.category__item {
@@ -54,4 +105,27 @@ aside>.category>.category__item>.subcategory>.subcategory__item {
 aside>.category .selected {
     background: #6da5a7;
     color: white;
+}
+
+@media screen and (max-width:1200px) {
+    aside{
+        flex: 1 1 1px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    aside>.title>.category__burger>span {
+        display: block;
+    }
+    aside>ul {
+        margin-top: -15px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1s linear, margin 1.2s ease;
+    }
+    aside>ul.active {
+        margin-top: 0px;
+        max-height: 2500px;
+        transition: max-height 1s linear, margin 1.2s ease;
+
+    }
 }

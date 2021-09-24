@@ -1,19 +1,90 @@
 nav {
     background: url('../image/nav/bg.png');
-    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     padding: 0px 89px 0px 111px;
     align-items: center;
     justify-content: space-between;
 }
 
-nav>.menu {
+nav>.menu__drop-menu {
+    display: flex;
+    flex: 1 1 1px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+}
+
+nav>.menu__button {
+    display: none;
+    width: 100%;
+    background-color: #32a2a4;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav>.menu__button>.menu__burger {
+    width: 15px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav>.menu__button>.menu__burger>span::before,
+nav>.menu__button>.menu__burger>span::after,
+nav>.menu__button>.menu__burger>span {
+    display: block;
+    position: absolute;
+    width: 15px;
+    margin-left: -15px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    transition: all 0.3s linear;
+}
+
+nav>.menu__button>.menu__burger>span::before {
+    content: '';
+    display: block;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+nav>.menu__button>.menu__burger.active>span::before {
+    transform: rotate(45deg);
+    transition: all 0.3s linear;
+    margin-top: 0;
+}
+
+nav>.menu__button>.menu__burger.active>span {
+    width: 0;
+}
+
+nav>.menu__button>.menu__burger.active>span::after {
+    transform: rotate(-45deg);
+    transition: all 0.3s linear;
+    margin-top: 0;
+}
+
+nav>.menu__button>.menu__burger>span::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+nav>.menu__drop-menu>.menu {
     display: flex;
     padding-left: 0;
     align-items: center;
 }
 
-nav>.menu>.menu__item {
+nav>.menu__drop-menu>.menu>.menu__item {
     font-size: 18px;
     color: #fff;
     padding: 0 20px 0 20px;
@@ -21,29 +92,79 @@ nav>.menu>.menu__item {
     border-right: 1px dashed #89cac9;
 }
 
-nav>.menu>.menu__item:first-child {
+nav>.menu__drop-menu>.menu>.menu__item:first-child {
     border-left: none;
     padding-left: 0px;
+    text-decoration: underline;
 }
 
-nav>.menu>.menu__item:last-child {
+nav>.menu__drop-menu>.menu>.menu__item:last-child {
     border-right: none;
 }
 
-nav>.search {
+nav>.menu__drop-menu>.search {
     flex: 0 1 25%;
     height: 26px;
 }
 
-nav>.search>input[type="search"] {
+nav>.menu__drop-menu>.search>input[type="search"] {
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
 }
 
-nav>.search>.search__icon {
+nav>.menu__drop-menu>.search>.search__icon {
     position: absolute;
     margin-left: -20px;
     margin-top: 5px;
+}
+
+@media screen and (max-width:1200px) {
+    nav {
+        background: none;
+    }
+    nav>.menu__button {
+        display: flex;
+    }
+    nav>.menu__drop-menu {
+        background-color: #eeeeee;
+    }
+    nav>.menu__drop-menu>.menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav>.menu__drop-menu>.search {
+        flex: 1 1 25%;
+        width: 100%;
+        display: none;
+        background-color: #eeeeee;
+    }
+    nav>.menu__drop-menu>.search>input {
+        width: 100%;
+    }
+    nav>.menu__drop-menu>.menu>.menu__item {
+        color: #666;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    nav>.menu__drop-menu>.menu>.menu__item:first-child {
+        text-decoration: none;
+    }
+    nav>.menu__drop-menu {
+        padding: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1s linear, padding 1.2s ease;
+    }
+    nav>.menu__drop-menu.active {
+        padding: 10px 20px;
+        max-height: 500px;
+        transition: max-height 1s linear, padding 1.2s ease;
+    }
+    nav>.menu__drop-menu.active>.search {
+        display: block;
+    }
 }

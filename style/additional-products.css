@@ -4,6 +4,7 @@
 
 .additional-products>.category {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
 }
 
@@ -23,15 +24,13 @@
 }
 
 .additional-products>.catalog {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    margin-right: -15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    justify-items: center;
 }
 
 .additional-products>.catalog>.catalog__item {
     margin-bottom: 30px;
-    margin-right: 15px;
 }
 
 .additional-products>.catalog>.catalog__item .icon {
@@ -89,4 +88,10 @@
 
 .additional-products>.catalog>.catalog__item p {
     margin: 0;
+}
+
+@media screen and (max-width: 1260px) {
+    .additional-products>.category>.category__item {
+    flex: 1 1 100%;
+    }
 }

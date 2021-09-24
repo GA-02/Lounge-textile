@@ -94,24 +94,60 @@ footer>.info a {
     color: #7db0b1;
     text-decoration: none;
 }
+
 @media screen and (max-width:1390px) {
     footer>.about {
         flex-shrink: 1;
         padding-right: 1%;
     }
-    
     footer>.offers {
         flex: 1 1 128px;
         padding-left: 1%;
         padding-right: 1%;
     }
-    
     footer>.map {
         padding-right: 1%;
     }
-    
     footer>.contacts {
         padding-left: 1%;
         flex: 1 0 432px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    footer>.about,
+    footer>.offers,
+    footer>.map,
+    footer>.contacts {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+        border: none;
+    }
+    footer>.about {
+        flex: 0 0 45%;
+        width: 100%;
+        border-right: 1px solid #f9f9f9;
+    }
+    footer>.offers {
+        flex: 0 0 45%;
+        padding-left: 15px;
+        border-left: 1px solid #9f9f9f;
+    }
+    footer>.map {
+        flex: 1 0 100%;
+        min-width: 1px;
+    }
+    footer>.contacts {
+        flex: 1 1 432px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer>.about,
+    footer>.offers {
+        flex: 1 1 100%;
+        border: none;
+        padding: 0;
     }
 }

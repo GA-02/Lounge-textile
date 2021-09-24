@@ -4,6 +4,9 @@
     margin: 0 89px 30px 111px;
     display: flex;
     justify-content: space-between;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    max-height: 76px;
 }
 
 @media screen and (max-width: 1260px) {
@@ -11,7 +14,7 @@
         display: none;
     }
     .partners>img:first-child {
-        display: block;
-        margin: 0 auto  ;
+        display: inline-flex;
+        margin: 0 auto;
     }
 }
